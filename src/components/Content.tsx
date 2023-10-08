@@ -19,7 +19,7 @@ const Content = ({
   setOpen,
 }: ListProps) => {
   return (
-    <main className=" mx-6">
+    <main className=" mx-6 ">
       {items.length ? (
         <ItemList
           items={items}

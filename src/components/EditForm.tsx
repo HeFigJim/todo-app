@@ -21,20 +21,23 @@ const EditForm = ({
       </button>
       <div
         /*  onSubmit={(e) => e.preventDefault()} */
-        className="highlight bg-white w-full h-4/6 rounded-full text-black relative"
+        className="bg-white w-full h-4/6 rounded-full text-black relative highlight"
       >
-        <form className="absolute top-40 left-1/2 -translate-x-1/2 text-center">
+        <form className="w-4/5 absolute top-40 left-1/2 -translate-x-1/2 text-center ">
           <label htmlFor="Edit">Edit Note</label>
           <br />
           <textarea
             id="Edit"
-            cols={60}
             rows={5}
             value={value}
             onChange={(e) => setNewItem(e.target.value)}
-            className="bg-slate-100 resize-none overflow-y-auto"
+            className="bg-slate-100 w-full mx-2 resize-none overflow-y-auto "
           ></textarea>
-          <button type="submit" onClick={handleEditForm}>
+          <button
+            type="submit"
+            onClick={handleEditForm}
+            className="border-b-4 hover:text-red-500"
+          >
             Submit
           </button>
         </form>

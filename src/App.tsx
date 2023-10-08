@@ -7,7 +7,7 @@ import EditForm from "./components/EditForm";
 
 function App() {
   const [items, setItems] = useState(
-    JSON.parse(localStorage.getItem("shoppinglist") || "")
+    JSON.parse(localStorage.getItem("shoppinglist") as string) || ""
   );
   const [newItem, setNewItem] = useState("");
   const [edit, setEdit] = useState("");
@@ -49,7 +49,7 @@ function App() {
     const id = _id;
     const listItem: Item = items.filter((item: Item) => item.id === id);
     const UpdatedItem = {
-      id,
+      id: id,
       checked: listItem.checked,
       item: edit,
     };
@@ -58,7 +58,7 @@ function App() {
   };
 
   return (
-    <div className="w-2/3 mx-auto h-screen bg-slate-500 py-4 rounded-md overflow-y-scroll relative">
+    <div className="w-full lg:w-2/3 mx-auto min-h-screen bg-slate-500 py-4 lg:rounded-md relative ">
       <Header title="Todo List" />
       <AddItem
         newItem={newItem}
