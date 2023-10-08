@@ -173,7 +173,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Portfolio - (<a href="hefigjim.com">hefigjim.com</a>)  
+Portfolio - (<a href="https://hefigjim.com">hefigjim.com</a>)  
 
 Project Link: [https://github.com/HeFigJim/todo-app](https://github.com/HeFigJim/todo-app)
 
@@ -186,7 +186,7 @@ Project Link: [https://github.com/HeFigJim/todo-app](https://github.com/HeFigJim
 
 * [Cantek Canada](https://www.cantekcanada.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top" >back to top</a>)</p>
 
 
 
